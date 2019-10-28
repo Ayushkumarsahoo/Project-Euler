@@ -3,15 +3,11 @@ using namespace std;
 
 int main()
 {
-    long long int i,sum1=0,sum2=0,diff;
-    for(i=1;i<=100;i++)
-    {
-        sum1+=(i*i);
-        sum2+=i;
-    }
-    sum2=(sum2*sum2);
-    diff=sum1-sum2;
-    cout<<"the difference is"<<diff;
+    long long int N=100,sum1=0,sum2=0,diff;
+    sum1 =(N*(N + 1))/ 2;
+    sum2=(N*(N + 1)*(2*N + 1))/ 6;
+    diff=(sum1*sum1)-sum2;
+    cout<<diff;
 
    return 0;
 }
