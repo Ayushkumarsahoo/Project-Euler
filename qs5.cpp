@@ -13,13 +13,9 @@ int lcm(int a,int b)
 
 int hcf(int a,int b)
 {
-    int i,hcf;
-    for(i=1;i<=a&&i<=b;i++)
-    {
-        if(a%i==0&&b%i==0)
-            hcf=i;
-    }
-    return hcf;
+     if (b == 0)
+      return a;
+   return hcf(b, a % b);
 }
 
 int main()
