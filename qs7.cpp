@@ -1,11 +1,10 @@
 #include<iostream>
 #include<math.h>
 using namespace std;
-int isprime(long int n)
+long int isprime(long int n)
 {
-    if((n%2==0) && (n!=2))
-        {return 0;}
-    for(long int i=2;i<=sqrt(n);i++)
+    if((n%2==0) && (n!=2)){return 0;}
+    for(long int i=3;i<=sqrt(n);i+=2)
     {
         if(n%i==0)
         {
@@ -14,6 +13,7 @@ int isprime(long int n)
     }
     return 1;
 }
+
 
 
 int main()
