@@ -18,7 +18,7 @@ long int isprime(long int n)
 
 int main()
 {
-    long int c=0,n=2;
+    long int c=1,n=3;
     while(c<10001)
     {
         if(isprime(n))
