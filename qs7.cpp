@@ -25,7 +25,7 @@ int main()
         {
             c++;
         }
-        n++;
+        n+=2;
     }
     cout<<"the 10001th prime number is "<<n-1;
 }
